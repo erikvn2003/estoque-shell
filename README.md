@@ -68,7 +68,9 @@ CREATE TABLE usuarios (
   senha VARCHAR(50) NOT NULL
 );
 
-## ✅ Regras de Negócio
+---
+
+# ✅ Regras de NegóciO
 
 - **Código externo** deve ter 7 dígitos
 - Se tentar cadastrar um produto com mesmo código e **informações diferentes**, exibe erro
@@ -78,8 +80,9 @@ CREATE TABLE usuarios (
 
 ---
 
-## 🖨️ Relatório de Estoque
+# 🖨️ Relatório de Estoque
 
 - Há um botão opcional para imprimir o relatório da tabela de estoque (`relatorio.php`)
 - Este recurso pode ser removido se o projeto exigir um sistema mais simples
 
+---
