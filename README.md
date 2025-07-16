@@ -42,7 +42,13 @@ CREATE TABLE usuarios (
   senha VARCHAR(50) NOT NULL
 );
 
+<<<<<<< HEAD
 7. Ajuste as credenciais do banco em includes/conexao.php se necessário.
+=======
+---
+
+# ✅ Regras de NegóciO
+>>>>>>> 6b376d150ae51b6e242ce070ada20cff7796f3c0
 
 8. Acesse o sistema via:
 
@@ -81,5 +87,10 @@ LICENSE          # Licença do projeto
 	Esse recurso pode ser removido se o projeto exigir uma versão mais simples.
 
 
+<<<<<<< HEAD
+=======
+# 🖨️ Relatório de Estoque
+>>>>>>> 6b376d150ae51b6e242ce070ada20cff7796f3c0
 
 
+---
