@@ -20,21 +20,49 @@ O sistema permite que usuários façam login para acessar uma área restrita, on
 
 ## ⚙️ Como Executar Localmente
 
-1. Instale o [XAMPP](https://www.apachefriends.org/pt_br/index.html).
-2. Copie a pasta do projeto para: 
+Siga os passos abaixo para rodar o sistema de estoque em sua máquina local:
+
+### 1. Instale o XAMPP
+
+Baixe e instale o XAMPP em:  
+🔗 https://www.apachefriends.org/pt_br/index.html
+
+---
+
+### 2. Copie o projeto
+
+Após clonar ou baixar o projeto, mova a pasta para:
 
 C:\xampp\htdocs\estoque-shell
 
-3. Inicie o Apache e o MySQL pelo painel do XAMPP.
-4. Acesse o phpMyAdmin no navegador:
+---
+
+### 3. Inicie o servidor
+
+Abra o **XAMPP Control Panel** e inicie os serviços:
+
+- ✅ Apache
+- ✅ MySQL
+
+---
+
+### 4. Crie o banco de dados
+
+1. Acesse o phpMyAdmin no navegador:
 
 http://localhost/phpmyadmin
 
-5. Crie um banco de dados chamado:
+
+2. Crie um banco de dados com o nome:
 
 estoque posto
 
-6. Execute o SQL abaixo para criar a tabela de usuários:
+---
+
+### 5. Crie a tabela de usuários
+
+No phpMyAdmin, com o banco selecionado, vá até "SQL" e execute o comando:
+
 ```sql
 CREATE TABLE usuarios (
   id INT AUTO_INCREMENT PRIMARY KEY,
@@ -42,55 +70,54 @@ CREATE TABLE usuarios (
   senha VARCHAR(50) NOT NULL
 );
 
-<<<<<<< HEAD
-7. Ajuste as credenciais do banco em includes/conexao.php se necessário.
-=======
----
-
-# ✅ Regras de NegóciO
->>>>>>> 6b376d150ae51b6e242ce070ada20cff7796f3c0
-
-8. Acesse o sistema via:
+### 6. Acesse o sistema
+Abra o navegador e acesse:
 
 http://localhost/estoque-shell/public/index.html
 
-📁 Estrutura dos Arquivos
+---
 
-/css/            # Arquivos CSS (style.css)
-img/             # Imagens (shell-logo.png)
-includes/        # Arquivos PHP de conexão e funções comuns (conexao.php)
-pages/           # Páginas principais do sistema (estoque.php, cadastrar.php, baixar.php, excluir.php, relatorio.php)
-auth/            # Arquivos de autenticação (login.php, logout.php)
-public/          # Arquivos públicos e estáticos (index.html)
-README.md        # Documentação do projeto
-LICENSE          # Licença do projeto
-.gitignore       # Arquivo para ignorar arquivos desnecessários no git
+### ✅ Regras de Negócio
+Código externo deve conter exatamente 7 dígitos.
 
-✅ Regras de Negócio
+Se um produto com o mesmo código for cadastrado:
 
-	Código externo deve conter exatamente 7 dígitos.
+Se os dados forem diferentes, o sistema exibe erro.
 
-	Ao cadastrar um produto com código já existente:
+Se os dados forem iguais, o sistema soma automaticamente a quantidade.
 
-	Se as demais informações forem diferentes, o sistema exibe erro.
+As baixas e exclusões são feitas diretamente pela interface.
 
-	Se as informações forem iguais, o sistema soma a quantidade automaticamente.
-
-	Operações de baixa e exclusão são feitas pela interface.
-
-	A exclusão de produtos requer confirmação do usuário.
-
-🖨️ Relatório de Estoque
-
-	O sistema oferece um botão para gerar e imprimir o relatório da tabela de estoque (pages/relatorio.php).
-
-	Esse recurso pode ser removido se o projeto exigir uma versão mais simples.
-
-
-<<<<<<< HEAD
-=======
-# 🖨️ Relatório de Estoque
->>>>>>> 6b376d150ae51b6e242ce070ada20cff7796f3c0
-
+A exclusão exige confirmação do usuário.
 
 ---
+
+### 🖨️ Relatório de Estoque
+
+Há um botão para gerar e imprimir o relatório da tabela de estoque (relatorio.php).
+
+Este recurso pode ser removido, se necessário, para simplificação.
+
+---
+
+### 📁 Estrutura Sugerida de Pastas
+
+/css/             -> Arquivos de estilo
+/img/             -> Imagens do sistema
+/includes/        -> Arquivos PHP reutilizáveis (ex: conexao.php)
+/pages/           -> Páginas principais (estoque.php, cadastrar.php, etc)
+/auth/            -> Autenticação (login.php, logout.php)
+public/index.html -> Tela de login
+README.md         -> Documentação
+LICENSE           -> Licença
+
+---
+
+### 📄 Licença
+Projeto sob licença MIT. Veja o arquivo LICENSE para mais detalhes.
+
+
+
+
+
+
