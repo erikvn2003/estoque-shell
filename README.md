@@ -9,7 +9,7 @@ Este projeto é um sistema web desenvolvido em PHP e MySQL para gerenciar o esto
 
 O sistema permite que usuários façam login para acessar uma área restrita, onde é possível:
 
-- Cadastrar produtos por código externo (7 dígitos)
+- Cadastrar produtos por código externo 
 - Somar quantidades automaticamente quando o código já existe
 - Dar baixa individual nos produtos
 - Excluir produtos com confirmação
@@ -33,7 +33,9 @@ Baixe e instale o XAMPP em:
 
 Após clonar ou baixar o projeto, mova a pasta para:
 
+```
 C:\xampp\htdocs\estoque-shell
+```
 
 ---
 
@@ -49,13 +51,15 @@ Abra o **XAMPP Control Panel** e inicie os serviços:
 ### 4. Crie o banco de dados
 
 1. Acesse o phpMyAdmin no navegador:
-
-http://localhost/phpmyadmin
-
+   ```
+   http://localhost/phpmyadmin
+   ```
 
 2. Crie um banco de dados com o nome:
 
-estoque posto
+```
+estoque_posto
+```
 
 ---
 
@@ -69,39 +73,43 @@ CREATE TABLE usuarios (
   usuario VARCHAR(50) NOT NULL,
   senha VARCHAR(50) NOT NULL
 );
+```
+
+---
 
 ### 6. Acesse o sistema
+
 Abra o navegador e acesse:
 
+```
 http://localhost/estoque-shell/public/index.html
+```
+
+Faça login com um usuário criado manualmente no banco (por enquanto).
 
 ---
 
-### ✅ Regras de Negócio
-Código externo deve conter exatamente 7 dígitos.
+## ✅ Regras de Negócio
 
-Se um produto com o mesmo código for cadastrado:
-
-Se os dados forem diferentes, o sistema exibe erro.
-
-Se os dados forem iguais, o sistema soma automaticamente a quantidade.
-
-As baixas e exclusões são feitas diretamente pela interface.
-
-A exclusão exige confirmação do usuário.
+- Código externo deve conter **exatamente 7 dígitos**.
+- Se um produto com o mesmo código for cadastrado:
+  - Se os dados forem diferentes, o sistema exibe **erro**.
+  - Se os dados forem iguais, o sistema **soma automaticamente a quantidade**.
+- As baixas e exclusões são feitas diretamente pela interface.
+- A exclusão exige confirmação do usuário.
 
 ---
 
-### 🖨️ Relatório de Estoque
+## 🖨️ Relatório de Estoque
 
-Há um botão para gerar e imprimir o relatório da tabela de estoque (relatorio.php).
-
-Este recurso pode ser removido, se necessário, para simplificação.
+- Há um botão para gerar e imprimir o relatório da tabela de estoque (`relatorio.php`).
+- Este recurso pode ser removido, se necessário, para simplificação.
 
 ---
 
-### 📁 Estrutura Sugerida de Pastas
+## 📁 Estrutura Sugerida de Pastas
 
+```
 /css/             -> Arquivos de estilo
 /img/             -> Imagens do sistema
 /includes/        -> Arquivos PHP reutilizáveis (ex: conexao.php)
@@ -110,11 +118,14 @@ Este recurso pode ser removido, se necessário, para simplificação.
 public/index.html -> Tela de login
 README.md         -> Documentação
 LICENSE           -> Licença
+```
 
 ---
 
-### 📄 Licença
+## 📄 Licença
+
 Projeto sob licença MIT. Veja o arquivo LICENSE para mais detalhes.
+
 
 
 
