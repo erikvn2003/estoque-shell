@@ -82,7 +82,7 @@ CREATE TABLE usuarios (
 Abra o navegador e acesse:
 
 ```
-http://localhost/estoque-shell/public/index.html
+http://localhost/estoque-shell/src/index.html
 ```
 
 Faça login com um usuário criado manualmente no banco (por enquanto).
