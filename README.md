@@ -94,13 +94,13 @@ Antes de acessar, é necessário ter um usuário criado no banco de dados.
 
 #### 💾 Inserir manualmente no banco (phpMyAdmin ou outro gerenciador MySQL):
 
-Se a senha **NÃO** estiver criptografada:
 
 ```sql
 INSERT INTO usuarios (usuario, senha) VALUES ('admin', '1234');
 ```
 ---
 ✅ Login padrão (exemplo):
+
 Usuário: admin
 
 Senha: 1234
