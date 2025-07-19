@@ -88,6 +88,25 @@ http://localhost/estoque-shell/src/index.html
 
 ---
 
+### 👤 Login
+
+Antes de acessar, é necessário ter um usuário criado no banco de dados.
+
+#### 💾 Inserir manualmente no banco (phpMyAdmin ou outro gerenciador MySQL):
+
+Se a senha **NÃO** estiver criptografada:
+
+```sql
+INSERT INTO usuarios (usuario, senha) VALUES ('admin', '1234');
+```
+---
+✅ Login padrão (exemplo):
+Usuário: admin
+
+Senha: 1234
+
+---
+
 ## ✅ Regras de Negócio
 
 - Código externo deve conter **exatamente 7 dígitos**.
