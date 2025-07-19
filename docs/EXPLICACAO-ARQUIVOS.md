@@ -65,4 +65,4 @@ Este documento detalha a função de cada arquivo presente no sistema de control
 
 ---
 
-Feito com ❤️ por Erik Vinicius
+Feito por Erik Vinicius
