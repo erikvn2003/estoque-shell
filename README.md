@@ -85,7 +85,6 @@ Abra o navegador e acesse:
 http://localhost/estoque-shell/src/index.html
 ```
 
-Faça login com um usuário criado manualmente no banco (por enquanto).
 
 ---
 
